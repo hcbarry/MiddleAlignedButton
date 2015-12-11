@@ -7,25 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CFB07891C1A71E2007CE249 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB07881C1A71E2007CE249 /* main.m */; };
-		4CFB078C1C1A71E2007CE249 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB078B1C1A71E2007CE249 /* AppDelegate.m */; };
-		4CFB078F1C1A71E2007CE249 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CFB078E1C1A71E2007CE249 /* ViewController.m */; };
-		4CFB07921C1A71E2007CE249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB07901C1A71E2007CE249 /* Main.storyboard */; };
-		4CFB07941C1A71E2007CE249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB07931C1A71E2007CE249 /* Assets.xcassets */; };
-		4CFB07971C1A71E2007CE249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CFB07951C1A71E2007CE249 /* LaunchScreen.storyboard */; };
+		4CC587B81C1B3B5A004DE3E2 /* MiddleAlignedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC587B71C1B3B5A004DE3E2 /* MiddleAlignedButton.m */; };
+		4CC587BB1C1B3BD0004DE3E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC587B91C1B3BD0004DE3E2 /* LaunchScreen.storyboard */; };
+		4CC587BD1C1B3CFF004DE3E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC587BC1C1B3CFF004DE3E2 /* Assets.xcassets */; };
+		4CDA4BD91C1B39EF0054C5C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA4BD21C1B39EF0054C5C0 /* AppDelegate.m */; };
+		4CDA4BDA1C1B39EF0054C5C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CDA4BD31C1B39EF0054C5C0 /* Main.storyboard */; };
+		4CDA4BDB1C1B39EF0054C5C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CDA4BD51C1B39EF0054C5C0 /* Info.plist */; };
+		4CDA4BDC1C1B39EF0054C5C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA4BD61C1B39EF0054C5C0 /* main.m */; };
+		4CDA4BDD1C1B39EF0054C5C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA4BD81C1B39EF0054C5C0 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CC587B61C1B3B5A004DE3E2 /* MiddleAlignedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MiddleAlignedButton.h; path = ../../MiddleAlignedButton/MiddleAlignedButton.h; sourceTree = "<group>"; };
+		4CC587B71C1B3B5A004DE3E2 /* MiddleAlignedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MiddleAlignedButton.m; path = ../../MiddleAlignedButton/MiddleAlignedButton.m; sourceTree = "<group>"; };
+		4CC587BA1C1B3BD0004DE3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MiddleAlignedButton/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CC587BC1C1B3CFF004DE3E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MiddleAlignedButton/Assets.xcassets; sourceTree = "<group>"; };
+		4CDA4BD11C1B39EF0054C5C0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MiddleAlignedButton/AppDelegate.h; sourceTree = "<group>"; };
+		4CDA4BD21C1B39EF0054C5C0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = MiddleAlignedButton/AppDelegate.m; sourceTree = "<group>"; };
+		4CDA4BD41C1B39EF0054C5C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MiddleAlignedButton/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CDA4BD51C1B39EF0054C5C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MiddleAlignedButton/Info.plist; sourceTree = "<group>"; };
+		4CDA4BD61C1B39EF0054C5C0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MiddleAlignedButton/main.m; sourceTree = "<group>"; };
+		4CDA4BD71C1B39EF0054C5C0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = MiddleAlignedButton/ViewController.h; sourceTree = "<group>"; };
+		4CDA4BD81C1B39EF0054C5C0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MiddleAlignedButton/ViewController.m; sourceTree = "<group>"; };
 		4CFB07841C1A71E2007CE249 /* MiddleAlignedButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiddleAlignedButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFB07881C1A71E2007CE249 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4CFB078A1C1A71E2007CE249 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		4CFB078B1C1A71E2007CE249 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4CFB078D1C1A71E2007CE249 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4CFB078E1C1A71E2007CE249 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4CFB07911C1A71E2007CE249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4CFB07931C1A71E2007CE249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4CFB07961C1A71E2007CE249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4CFB07981C1A71E2007CE249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,16 @@
 			isa = PBXGroup;
 			children = (
 				4CFB07861C1A71E2007CE249 /* MiddleAlignedButton */,
+				4CDA4BD11C1B39EF0054C5C0 /* AppDelegate.h */,
+				4CDA4BD21C1B39EF0054C5C0 /* AppDelegate.m */,
+				4CC587B91C1B3BD0004DE3E2 /* LaunchScreen.storyboard */,
+				4CDA4BD31C1B39EF0054C5C0 /* Main.storyboard */,
+				4CC587BC1C1B3CFF004DE3E2 /* Assets.xcassets */,
+				4CDA4BD51C1B39EF0054C5C0 /* Info.plist */,
+				4CDA4BD61C1B39EF0054C5C0 /* main.m */,
+				4CDA4BD71C1B39EF0054C5C0 /* ViewController.h */,
+				4CDA4BD81C1B39EF0054C5C0 /* ViewController.m */,
+				4CFB07871C1A71E2007CE249 /* Supporting Files */,
 				4CFB07851C1A71E2007CE249 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,15 +73,8 @@
 		4CFB07861C1A71E2007CE249 /* MiddleAlignedButton */ = {
 			isa = PBXGroup;
 			children = (
-				4CFB078A1C1A71E2007CE249 /* AppDelegate.h */,
-				4CFB078B1C1A71E2007CE249 /* AppDelegate.m */,
-				4CFB078D1C1A71E2007CE249 /* ViewController.h */,
-				4CFB078E1C1A71E2007CE249 /* ViewController.m */,
-				4CFB07901C1A71E2007CE249 /* Main.storyboard */,
-				4CFB07931C1A71E2007CE249 /* Assets.xcassets */,
-				4CFB07951C1A71E2007CE249 /* LaunchScreen.storyboard */,
-				4CFB07981C1A71E2007CE249 /* Info.plist */,
-				4CFB07871C1A71E2007CE249 /* Supporting Files */,
+				4CC587B61C1B3B5A004DE3E2 /* MiddleAlignedButton.h */,
+				4CC587B71C1B3B5A004DE3E2 /* MiddleAlignedButton.m */,
 			);
 			path = MiddleAlignedButton;
 			sourceTree = "<group>";
@@ -77,6 +85,7 @@
 				4CFB07881C1A71E2007CE249 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = MiddleAlignedButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +119,7 @@
 				TargetAttributes = {
 					4CFB07831C1A71E2007CE249 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = MT22CU756A;
 					};
 				};
 			};
@@ -136,9 +146,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CFB07971C1A71E2007CE249 /* LaunchScreen.storyboard in Resources */,
-				4CFB07941C1A71E2007CE249 /* Assets.xcassets in Resources */,
-				4CFB07921C1A71E2007CE249 /* Main.storyboard in Resources */,
+				4CC587BB1C1B3BD0004DE3E2 /* LaunchScreen.storyboard in Resources */,
+				4CDA4BDB1C1B39EF0054C5C0 /* Info.plist in Resources */,
+				4CC587BD1C1B3CFF004DE3E2 /* Assets.xcassets in Resources */,
+				4CDA4BDA1C1B39EF0054C5C0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,29 +160,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CFB078F1C1A71E2007CE249 /* ViewController.m in Sources */,
-				4CFB078C1C1A71E2007CE249 /* AppDelegate.m in Sources */,
-				4CFB07891C1A71E2007CE249 /* main.m in Sources */,
+				4CDA4BD91C1B39EF0054C5C0 /* AppDelegate.m in Sources */,
+				4CDA4BDC1C1B39EF0054C5C0 /* main.m in Sources */,
+				4CDA4BDD1C1B39EF0054C5C0 /* ViewController.m in Sources */,
+				4CC587B81C1B3B5A004DE3E2 /* MiddleAlignedButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4CFB07901C1A71E2007CE249 /* Main.storyboard */ = {
+		4CC587B91C1B3BD0004DE3E2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4CFB07911C1A71E2007CE249 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4CFB07951C1A71E2007CE249 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4CFB07961C1A71E2007CE249 /* Base */,
+				4CC587BA1C1B3BD0004DE3E2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4CDA4BD31C1B39EF0054C5C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CDA4BD41C1B39EF0054C5C0 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -213,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -250,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -261,6 +273,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MiddleAlignedButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BarryLee.MiddleAlignedButton;
@@ -272,6 +286,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = MiddleAlignedButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.BarryLee.MiddleAlignedButton;
@@ -298,6 +314,7 @@
 				4CFB079D1C1A71E2007CE249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,6 +1,7 @@
 # Xcode
 #
-build/
+_Store
+build/*
 *.pbxuser
 !default.pbxuser
 *.mode1v3
