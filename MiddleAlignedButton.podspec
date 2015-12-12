@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/MiddleAlignedButton"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots     = "https://raw.githubusercontent.com/hcbarry/MiddleAlignedButton/master/Demo.gif"
   s.license          = 'MIT'
   s.author           = { "Barry Lee" => "hcbarry@gmail.com" }
   s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/MiddleAlignedButton.git", :tag => s.version.to_s }
@@ -33,5 +33,5 @@ Pod::Spec.new do |s|
     'MiddleAlignedButton' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
 end
