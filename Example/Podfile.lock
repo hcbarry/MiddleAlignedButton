@@ -1,14 +1,14 @@
 PODS:
-  - MiddleAlignedButton (1.0.0)
+  - UIButton+MiddleAligning (1.1.0)
 
 DEPENDENCIES:
-  - MiddleAlignedButton (from `../`)
+  - UIButton+MiddleAligning (from `../`)
 
 EXTERNAL SOURCES:
-  MiddleAlignedButton:
+  UIButton+MiddleAligning:
     :path: ../
 
 SPEC CHECKSUMS:
-  MiddleAlignedButton: c10926e247d2c24f399496a1e69aa0b8d5a0cb17
+  UIButton+MiddleAligning: 97c5d8caf4fea7507ac4662f5bf3839c072fb0f1
 
 COCOAPODS: 0.38.2

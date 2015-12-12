@@ -2,5 +2,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'MiddleAlignedButton', :exclusive => true do
-  pod "MiddleAlignedButton", :path => "../"
+  pod "UIButton+MiddleAligning", :path => "../"
+#  pod "UIButton+MiddleAligning", :git => 'https://github.com/hcbarry/MiddleAlignedButton.git'
+
 end

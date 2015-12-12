@@ -7,12 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "MiddleAlignedButton.h"
+#import "UIButton+MiddleAligning.h"
 
-@interface UIView (MiddleAlignedButton)
+@interface UIView (MiddleAligning)
 @end
 
-@implementation UIView (MiddleAlignedButton)
+@implementation UIView (MiddleAligning)
 
 - (UIImage *)snapshotImage
 {

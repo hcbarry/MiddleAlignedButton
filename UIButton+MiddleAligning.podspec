@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint MiddleAlignedButton.podspec' to ensure this is a
+# Be sure to run `pod lib lint UIButton+MiddleAligning.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "MiddleAlignedButton"
+  s.name             = "UIButton+MiddleAligning"
   s.version          = "1.1.0"
-  s.summary          = "An imageView and titleLabel middle aligned button for iOS"
+  s.summary          = "An UIButton category for middle aligning imageView and titleLabel"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -29,9 +29,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'MiddleAlignedButton' => ['Pod/Assets/*.png']
-  }
-
   s.public_header_files = 'Pod/Classes/**/*.h'
 end

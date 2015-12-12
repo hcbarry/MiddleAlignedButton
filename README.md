@@ -21,7 +21,7 @@ MiddleAlignedButton is available through [CocoaPods](http://cocoapods.org). To i
 it, simply add the following line to your Podfile:
 
 ```bash
-pod "MiddleAlignedButton"
+pod "UIButton+MiddleAligning"
 ```
 
 ## Author

@@ -1,18 +1,18 @@
 //
-//  MiddleAlignedButton.m
-//  MiddleAlignedButton
+//  UIButton+MiddleAligning.m
+//  UIButton+MiddleAligning
 //
 //  Created by Barry on 12/11/15.
 //  Copyright © 2015 BarryLee. All rights reserved.
 //
 
-#import "MiddleAlignedButton.h"
+#import "UIButton+MiddleAligning.h"
 
-@interface UIImage (MiddleAlignedButton)
+@interface UIImage (MiddleAligning)
 
 @end
 
-@implementation UIImage (MiddleAlignedButton)
+@implementation UIImage (MiddleAligning)
 
 - (UIImage *)MiddleAlignedButtonImageScaleToSize:(CGSize)size
 {
@@ -32,7 +32,7 @@
 
 @end
 
-@implementation UIButton (MiddleAlignedButton)
+@implementation UIButton (MiddleAligning)
 
 - (void)middleAlignButtonWithSpacing:(CGFloat)spacing
 {
