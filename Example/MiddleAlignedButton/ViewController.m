@@ -41,20 +41,22 @@
 {
     [super viewDidLoad];
 
+    self.view.backgroundColor = [UIColor lightGrayColor];
+
+    self.button.layer.cornerRadius = 4.0f;
+    self.button.layer.masksToBounds = YES;
     [self.button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
     self.button.backgroundColor = [UIColor whiteColor];
     self.button.titleLabel.font = [UIFont systemFontOfSize:12.0f];
+    self.button.titleLabel.textColor = [UIColor lightGrayColor];
     [self.button addTarget:self action:@selector(buttonDidTouchUpInside:) forControlEvents:UIControlEventTouchUpInside];
 
     self.imageLabel = [UILabel new];
     [self.imageLabel setText:@""];
     [self.imageLabel setOpaque:NO];
-    [self.imageLabel setBackgroundColor:[UIColor clearColor]];
+    [self.imageLabel setTextColor:[UIColor colorWithRed:0.72 green:0.43 blue:0.47 alpha:1.00]];
     [self.imageLabel setTextAlignment:NSTextAlignmentCenter];
-
-    self.button.backgroundColor = [UIColor yellowColor];
-    self.button.titleLabel.backgroundColor = [UIColor redColor];
-    self.button.imageView.backgroundColor = [UIColor greenColor];
+    [self.imageLabel setBackgroundColor:[UIColor clearColor]];
 
     [self updateButtonContent];
 }
@@ -81,6 +83,7 @@
 
     NSMutableString *title = [NSMutableString stringWithString:[NSUUID UUID].UUIDString];
     [title deleteCharactersInRange:NSMakeRange(0, arc4random() % title.length)];
+    title = [@"Apple" mutableCopy];
 
     [UIView animateWithDuration:0 animations:^{
         [self.button setImage:image forState:UIControlStateNormal];

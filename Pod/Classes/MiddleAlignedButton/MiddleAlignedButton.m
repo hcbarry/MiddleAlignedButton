@@ -50,12 +50,12 @@
     CGFloat height = CGRectGetHeight(self.frame) - titleSize.height - self.middleSpace * 2;
     CGFloat width = CGRectGetWidth(self.frame) - titleSize.width;
     UIImage *newImage = nil;
-    if (imageSize.width > width) {
+    if (imageSize.width > ceilf(width)) {
         CGFloat ratio = width / imageSize.width;
         newImage = [self.imageView.image MiddleAlignedButtonImageViewScaleToSize:CGSizeMake(width, imageSize.height * ratio)];
         imageSize = newImage.size;
     }
-    if (imageSize.height > height) {
+    if (imageSize.height > ceilf(height)) {
         CGFloat ratio = height / imageSize.height;
         newImage = [self.imageView.image MiddleAlignedButtonImageViewScaleToSize:CGSizeMake(imageSize.width * ratio, height)];
         imageSize = newImage.size;

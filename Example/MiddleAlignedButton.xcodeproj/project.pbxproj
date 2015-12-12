@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CC587B81C1B3B5A004DE3E2 /* MiddleAlignedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC587B71C1B3B5A004DE3E2 /* MiddleAlignedButton.m */; };
+		0244791A542B6708523E5A84 /* Pods_MiddleAlignedButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6969E917D4832269FA652AA8 /* Pods_MiddleAlignedButton.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4CC587BB1C1B3BD0004DE3E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC587B91C1B3BD0004DE3E2 /* LaunchScreen.storyboard */; };
 		4CC587BD1C1B3CFF004DE3E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CC587BC1C1B3CFF004DE3E2 /* Assets.xcassets */; };
 		4CDA4BD91C1B39EF0054C5C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CDA4BD21C1B39EF0054C5C0 /* AppDelegate.m */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4CC587B61C1B3B5A004DE3E2 /* MiddleAlignedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MiddleAlignedButton.h; path = ../../MiddleAlignedButton/MiddleAlignedButton.h; sourceTree = "<group>"; };
-		4CC587B71C1B3B5A004DE3E2 /* MiddleAlignedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MiddleAlignedButton.m; path = ../../MiddleAlignedButton/MiddleAlignedButton.m; sourceTree = "<group>"; };
+		0FDEB6DF1A22F781721B1097 /* Pods-MiddleAlignedButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiddleAlignedButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-MiddleAlignedButton/Pods-MiddleAlignedButton.release.xcconfig"; sourceTree = "<group>"; };
+		460814C0A1576D3CE69130AE /* Pods-MiddleAlignedButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiddleAlignedButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MiddleAlignedButton/Pods-MiddleAlignedButton.debug.xcconfig"; sourceTree = "<group>"; };
 		4CC587BA1C1B3BD0004DE3E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MiddleAlignedButton/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CC587BC1C1B3CFF004DE3E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MiddleAlignedButton/Assets.xcassets; sourceTree = "<group>"; };
 		4CDA4BD11C1B39EF0054C5C0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = MiddleAlignedButton/AppDelegate.h; sourceTree = "<group>"; };
@@ -31,6 +31,7 @@
 		4CDA4BD81C1B39EF0054C5C0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = MiddleAlignedButton/ViewController.m; sourceTree = "<group>"; };
 		4CFB07841C1A71E2007CE249 /* MiddleAlignedButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiddleAlignedButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFB07881C1A71E2007CE249 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6969E917D4832269FA652AA8 /* Pods_MiddleAlignedButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiddleAlignedButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,16 +39,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0244791A542B6708523E5A84 /* Pods_MiddleAlignedButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A30844ED36679FBFDFD05A5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6969E917D4832269FA652AA8 /* Pods_MiddleAlignedButton.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4CFB077B1C1A71E2007CE249 = {
 			isa = PBXGroup;
 			children = (
-				4CFB07861C1A71E2007CE249 /* MiddleAlignedButton */,
 				4CDA4BD11C1B39EF0054C5C0 /* AppDelegate.h */,
 				4CDA4BD21C1B39EF0054C5C0 /* AppDelegate.m */,
 				4CC587B91C1B3BD0004DE3E2 /* LaunchScreen.storyboard */,
@@ -59,6 +68,8 @@
 				4CDA4BD81C1B39EF0054C5C0 /* ViewController.m */,
 				4CFB07871C1A71E2007CE249 /* Supporting Files */,
 				4CFB07851C1A71E2007CE249 /* Products */,
+				BF54DA3ABC0164570EA0D3FA /* Pods */,
+				3A30844ED36679FBFDFD05A5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,15 +81,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4CFB07861C1A71E2007CE249 /* MiddleAlignedButton */ = {
-			isa = PBXGroup;
-			children = (
-				4CC587B61C1B3B5A004DE3E2 /* MiddleAlignedButton.h */,
-				4CC587B71C1B3B5A004DE3E2 /* MiddleAlignedButton.m */,
-			);
-			path = MiddleAlignedButton;
-			sourceTree = "<group>";
-		};
 		4CFB07871C1A71E2007CE249 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +90,15 @@
 			path = MiddleAlignedButton;
 			sourceTree = "<group>";
 		};
+		BF54DA3ABC0164570EA0D3FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				460814C0A1576D3CE69130AE /* Pods-MiddleAlignedButton.debug.xcconfig */,
+				0FDEB6DF1A22F781721B1097 /* Pods-MiddleAlignedButton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4CFB079B1C1A71E2007CE249 /* Build configuration list for PBXNativeTarget "MiddleAlignedButton" */;
 			buildPhases = (
+				66F3A005FADB207155345A80 /* Check Pods Manifest.lock */,
 				4CFB07801C1A71E2007CE249 /* Sources */,
 				4CFB07811C1A71E2007CE249 /* Frameworks */,
 				4CFB07821C1A71E2007CE249 /* Resources */,
+				201345158E63D9E23771F3F4 /* Embed Pods Frameworks */,
+				3D731287707E3CA7941C01A5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,6 +169,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		201345158E63D9E23771F3F4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiddleAlignedButton/Pods-MiddleAlignedButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D731287707E3CA7941C01A5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MiddleAlignedButton/Pods-MiddleAlignedButton-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66F3A005FADB207155345A80 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4CFB07801C1A71E2007CE249 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -163,7 +225,6 @@
 				4CDA4BD91C1B39EF0054C5C0 /* AppDelegate.m in Sources */,
 				4CDA4BDC1C1B39EF0054C5C0 /* main.m in Sources */,
 				4CDA4BDD1C1B39EF0054C5C0 /* ViewController.m in Sources */,
-				4CC587B81C1B3B5A004DE3E2 /* MiddleAlignedButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +332,7 @@
 		};
 		4CFB079C1C1A71E2007CE249 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460814C0A1576D3CE69130AE /* Pods-MiddleAlignedButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -284,6 +346,7 @@
 		};
 		4CFB079D1C1A71E2007CE249 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FDEB6DF1A22F781721B1097 /* Pods-MiddleAlignedButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
