@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MiddleAlignedButton : UIButton
+@interface UIButton (MiddleAlignedButton)
 
-@property (nonatomic, assign) CGFloat middleSpace;
+- (void)middleAlignButtonWithSpacing:(CGFloat)spacing;
 
 @end

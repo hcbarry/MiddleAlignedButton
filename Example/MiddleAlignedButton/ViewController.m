@@ -28,7 +28,7 @@
 
 @interface ViewController ()
 
-@property (nonatomic, weak) IBOutlet MiddleAlignedButton *button;
+@property (nonatomic, weak) IBOutlet UIButton *button;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *buttonHeightConstraint;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *buttonWidthConstraint;
 @property (nonatomic, strong) UILabel *imageLabel;
@@ -54,9 +54,9 @@
     self.imageLabel = [UILabel new];
     [self.imageLabel setText:@""];
     [self.imageLabel setOpaque:NO];
-    [self.imageLabel setTextColor:[UIColor colorWithRed:0.72 green:0.43 blue:0.47 alpha:1.00]];
     [self.imageLabel setTextAlignment:NSTextAlignmentCenter];
-    [self.imageLabel setBackgroundColor:[UIColor clearColor]];
+    [self.imageLabel setTextColor:[UIColor colorWithRed:0.21 green:0.08 blue:0.07 alpha:1.00]];
+    [self.imageLabel setBackgroundColor:[UIColor colorWithRed:0.88 green:0.69 blue:0.66 alpha:1.00]];
 
     [self updateButtonContent];
 }
@@ -72,7 +72,7 @@
     [self.imageLabel sizeToFit];
     self.imageLabel.frame = ({
         CGRect frame = self.imageLabel.frame;
-        frame.size.width = frame.size.height;// + arc4random() % 60;
+        frame.size.width = frame.size.height + arc4random() % 60;
         frame;
     });
     UIImage *image = [self.imageLabel snapshotImage];
@@ -83,13 +83,10 @@
 
     NSMutableString *title = [NSMutableString stringWithString:[NSUUID UUID].UUIDString];
     [title deleteCharactersInRange:NSMakeRange(0, arc4random() % title.length)];
-    title = [@"Apple" mutableCopy];
 
-    [UIView animateWithDuration:0 animations:^{
-        [self.button setImage:image forState:UIControlStateNormal];
-        [self.button setTitle:title forState:UIControlStateNormal];
-        [self.button setMiddleSpace:arc4random() % 10];
-    }];
+    [self.button setImage:image forState:UIControlStateNormal];
+    [self.button setTitle:title forState:UIControlStateNormal];
+    [self.button middleAlignButtonWithSpacing:arc4random() % 10];
 }
 
 @end

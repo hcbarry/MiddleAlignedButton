@@ -14,7 +14,7 @@
 
 @implementation UIImage (MiddleAlignedButton)
 
-- (UIImage *)MiddleAlignedButtonImageViewScaleToSize:(CGSize)size
+- (UIImage *)MiddleAlignedButtonImageScaleToSize:(CGSize)size
 {
     UIGraphicsBeginImageContextWithOptions(size, NO, 0);
 
@@ -32,32 +32,24 @@
 
 @end
 
-@implementation MiddleAlignedButton
+@implementation UIButton (MiddleAlignedButton)
 
-- (void)setMiddleSpace:(CGFloat)middleSpace
+- (void)middleAlignButtonWithSpacing:(CGFloat)spacing
 {
-    _middleSpace = middleSpace;
-    [self setNeedsLayout];
-    [self layoutIfNeeded];
-}
-
-- (void)layoutSubviews
-{
-    [super layoutSubviews];
-
-    CGSize titleSize = self.titleLabel.frame.size;
-    CGSize imageSize = self.imageView.image.size;
-    CGFloat height = CGRectGetHeight(self.frame) - titleSize.height - self.middleSpace * 2;
-    CGFloat width = CGRectGetWidth(self.frame) - titleSize.width;
+    NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:[self titleForState:UIControlStateNormal] attributes:@{NSFontAttributeName : self.titleLabel.font}];
+    CGSize titleSize = [attributedString boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin context:nil].size;
+    CGSize imageSize = [self imageForState:UIControlStateNormal].size;
+    CGFloat maxImageHeight = CGRectGetHeight(self.frame) - titleSize.height - spacing * 2;
+    CGFloat maxImageWidth = CGRectGetWidth(self.frame);
     UIImage *newImage = nil;
-    if (imageSize.width > ceilf(width)) {
-        CGFloat ratio = width / imageSize.width;
-        newImage = [self.imageView.image MiddleAlignedButtonImageViewScaleToSize:CGSizeMake(width, imageSize.height * ratio)];
+    if (imageSize.width > ceilf(maxImageWidth)) {
+        CGFloat ratio = maxImageWidth / imageSize.width;
+        newImage = [self.imageView.image MiddleAlignedButtonImageScaleToSize:CGSizeMake(maxImageWidth, imageSize.height * ratio)];
         imageSize = newImage.size;
     }
-    if (imageSize.height > ceilf(height)) {
-        CGFloat ratio = height / imageSize.height;
-        newImage = [self.imageView.image MiddleAlignedButtonImageViewScaleToSize:CGSizeMake(imageSize.width * ratio, height)];
+    if (imageSize.height > ceilf(maxImageHeight)) {
+        CGFloat ratio = maxImageHeight / imageSize.height;
+        newImage = [self.imageView.image MiddleAlignedButtonImageScaleToSize:CGSizeMake(imageSize.width * ratio, maxImageHeight)];
         imageSize = newImage.size;
     }
     if (newImage) {
@@ -67,19 +59,15 @@
         [self setImage:newImage forState:UIControlStateNormal];
     }
 
-    CGFloat imageVerticalDiff = imageSize.height / 2.0f;
-    if (imageVerticalDiff > (titleSize.height / 2.0f)) {
-        imageVerticalDiff = (titleSize.height / 2.0f);
-    }
-    imageVerticalDiff += self.middleSpace;
-    CGFloat imageHorizontalDiff = titleSize.width / 2.0f;
+    CGFloat imageVerticalDiff = titleSize.height + spacing;
+    CGFloat imageHorizontalDiff = titleSize.width;
 
-    self.imageEdgeInsets = UIEdgeInsetsMake(-imageVerticalDiff, imageHorizontalDiff, imageVerticalDiff, -imageHorizontalDiff);
+    self.imageEdgeInsets = UIEdgeInsetsMake(-imageVerticalDiff, 0, 0, -imageHorizontalDiff);
 
-    CGFloat titleVerticalDiff = imageSize.height / 2.0f + self.middleSpace;
-    CGFloat titleHorizontalDiff = imageSize.width / 2.0f;
+    CGFloat titleVerticalDiff = imageSize.height + spacing;
+    CGFloat titleHorizontalDiff = imageSize.width;
 
-    self.titleEdgeInsets = UIEdgeInsetsMake(titleVerticalDiff, -titleHorizontalDiff, -titleVerticalDiff, titleHorizontalDiff);
+    self.titleEdgeInsets = UIEdgeInsetsMake(0, -titleHorizontalDiff, -titleVerticalDiff, 0);
 }
 
 @end
