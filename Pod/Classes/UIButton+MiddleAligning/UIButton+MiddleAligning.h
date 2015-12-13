@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ A category on UIButton that provides a simple yet powerful interface to middle aligning imageView and titleLabel
+ */
 @interface UIButton (MiddleAligning)
 
 /**
