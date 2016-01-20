@@ -69,6 +69,9 @@
     CGFloat titleHorizontalDiff = imageSize.width;
 
     self.titleEdgeInsets = UIEdgeInsetsMake(0, -titleHorizontalDiff, -titleVerticalDiff, 0);
+
+    self.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
+    self.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
 }
 
 @end
