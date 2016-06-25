@@ -51,14 +51,14 @@ To run the example project, clone the repo, and run `pod install` from the [Exam
   ```
 1. Run `pod install` from Terminal, then open your app's `.xcworkspace` file to launch Xcode.
 1. Import the `UIButton+MiddleAligning` header.
-  * Swift project: `import UIButton+MiddleAligning`
+  * Swift project: `import UIButton_MiddleAligning`
   * Objective-C project: `import "UIButton+MiddleAligning.h"`
 
 #### Manually from [GitHub](https://github.com)
 1. Download the source files in the [Pod/Classes/UIButton+MiddleAligning](Pod/Classes/UIButton+MiddleAligning) subdirectory.
 1. Add the source files to your Xcode project.
 1. Import the `UIButton+MiddleAligning` header.
-  * Swift project: `import UIButton+MiddleAligning`
+  * Swift project: `import UIButton_MiddleAligning`
   * Objective-C project: `import "UIButton+MiddleAligning.h"`
 
 ## Author
