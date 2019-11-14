@@ -18,5 +18,6 @@
  @discussion The middle aligning method for imageView and titleLabel.
  */
 - (void)middleAlignButtonWithSpacing:(CGFloat)spacing;
+- (void)middleAlignButtonWithSpacing:(CGFloat)spacing direction:(UIUserInterfaceLayoutDirection)direction;
 
 @end
